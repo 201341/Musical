@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.swj.musical.mapper.PlaylistMapper">
+
+
+
+    <insert id="insertSong">
+        insert into song(song_id,title,artist,artist_id,album,album_id,source,source_url,img_url)
+        values(#{songId},#{title},#{artist},#{artistId},#{album},#{albumId},#{source},#{sourceUrl},#{imgUrl})
+    </insert>
+
+
+</mapper>
